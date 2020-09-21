@@ -50,7 +50,18 @@ this.setState({output:output})
 }
   render() {
     return<div>
-          <span>Game </span> <button onClick={this.showValue.bind(this)}>Start</button>
+       <span>Game </span> 
+          <br/>
+          A Car Has Initial Petrol Of 30 liters, With a Milage of 1 Liter per Kilomeater        
+          <br/>
+          Total Distence To Cover Is 100 Km,
+          Car Picks ramdom number between 0-6
+          <br/>
+          If Car Reaches Petrol Pump 20 Liters is added
+          <br/>
+          5 Ramdom Petrol Pumps is Generated in Between 0-100 KM,   
+          <br/>         
+          <button onClick={this.showValue.bind(this)}>Start</button>
           <br/>
           Petrol pumps generated at :
           {this.state.petrolpumps.sort(function(a, b) {
